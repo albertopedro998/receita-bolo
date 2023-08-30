@@ -1,0 +1,219 @@
+.container {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.destaque {
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    background: url("../img/AdobeStock_86834525.webp") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.destaque p {
+    font-weight: bold;
+    /* font-size: 1.5em; */
+    color: white;
+    margin: 0;
+}
+.destaque p:first-child {
+    text-align: center;
+    font-size: 3em;
+    color: #1a8188c0;
+
+    padding-top: 1.5em;
+}
+.destaque form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 40px;
+    border: 1px solid #1a8188c0;
+    border-radius: 7px 7px;
+    background-color: white;
+    margin: .5em auto;
+    overflow: hidden;
+}
+.destaque form input, .destaque form button {
+    font-size: 1em;
+    height: 100%;
+    border: none;
+}
+.destaque form input {
+    text-align: center;
+    width: 70%;
+}
+.destaque form button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 30%;
+    background-color: #1a8188c0;
+    color: white;
+}
+figure {
+    width: 100%;
+    margin: auto;
+}
+figure img{
+    border: 1px solid #ffa600a9;
+    border-radius: 7px;
+}
+figure figcaption {
+    font-size: 1em;
+    font-weight: bold;
+    color: blueviolet;
+}
+.subtitulo::first-line {
+    color:#1a8188c0;
+}
+
+article .btn-ver-receita {
+    display: block;
+    font-size: 1em;
+    width: 95%;
+    padding: 0.5em;
+    color: #1a8188c0;
+    border: 1px solid #1a8188c0;
+    background-color: white;
+    border-radius: 5px;
+}
+article .btn-ver-receita:hover {
+    color: white;
+    background-color: #1a8188c0;
+    transition: 1s;
+}
+
+.receitas a[href="receita.html"] {
+    display: block;
+    font-size: 1.7em;
+    width: 50%;
+    margin: 1em auto 0 auto;
+    padding: 0.2em;
+    background-color: #1a8188c0;
+    color: white;
+    border-radius: 20px;
+    /* border-top: 1px solid; */
+
+}
+
+.receitas a[href="receita.html"]:hover {
+    color: #1a8188c0;
+    background-color: white;
+    border: 1px solid #1a8188c0;
+    transition: 1s;
+}
+.secao-receita-diaria {
+    /* background-color: black; */
+    /* color: white; */
+    padding: 1.5em;
+    margin-top: 10px;
+}
+.secao-receita-diaria .subtitulo{
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 1px solid #1a8188c0;
+}
+.secao-receita-diaria-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.secao-receita-diaria-info p {
+    font-family: "Consolas";
+    border-radius: 4px;
+    color: blueviolet;
+    background-color: #1a8188c0;
+    padding: 5px;
+    margin: 5px;
+}
+.secao-receita-diaria-info p::first-line {
+    color:white;
+}
+.secao-receita-diaria div section {
+    text-align: center;
+    
+}
+.secao-receita-diaria div+div p {
+    font-family: "Consolas";
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.secao-comentado > div {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding-top:2em;
+
+    /* align-items: baseline; */
+}
+.secao-comentado > div img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+.secao-comentado > div > div {
+    margin-left: 1.5em;
+}
+.secao-comentado > div a {
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: black;
+
+}
+.secao-comentado div > p {
+    letter-spacing: .10em;
+    line-height: 1.2em;
+}
+@media (min-width: 760px) {
+    .destaque {
+        height: 400px;
+        background-position: bottom;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .receita-1 { 
+        width: 48%;
+    }
+    
+    .secao-receita-diaria div>div>div {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .secao-receita-diaria div>div>div section {
+        text-align: left;
+        width: 50%;
+    }
+    .secao-receita-diaria div>div>div section h4 {
+        border: 1px solid #1a8188c0;
+        color: #1a8188c0;
+        text-align: center;
+        padding: 1em;
+        margin: 2px;
+    }
+}
+@media(min-width: 992px){
+    .destaque {
+        height: 500px;
+    }
+    .destaque:first-child {
+        padding-top: 3em;
+    }
+    .receita-1 {
+        width: 24%;
+    }
+    .secao-receita-diaria div > div > section{
+        width: 70%;
+        margin: 0 auto;
+    }
+}

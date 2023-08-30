@@ -1,0 +1,29 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+li{
+    padding: 0.5em;
+}
+
+li::first-letter {
+    text-transform: capitalize;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}

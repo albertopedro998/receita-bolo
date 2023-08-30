@@ -1,0 +1,79 @@
+main {
+    position: relative;
+}
+.secao-menu {
+    text-align: left;
+    padding: .5em;
+}
+
+.secao-menu form {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    /* padding: 1px; */
+    align-items: center;
+    overflow: hidden;
+    background-color: #1a8188c0;
+    height: 2em;
+    border: 1px solid #1a8188c0;
+    border-radius: 20px;
+}
+
+.secao-menu input,
+.secao-menu button {
+    height: 100%;
+    outline: none;
+    border: none;
+    font-size: inherit;
+}
+
+.secao-menu input {
+    width: 70%;
+    padding: 5px;
+}
+
+.secao-menu button {
+    width: 30%;
+    background-color: #1a8188c0;
+    color: white;
+}
+
+.secao-menu div {
+    background-color: #1a8188c0;
+    padding: 0 .2em .1em;
+}
+
+.secao-menu p {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding: .3em;
+    color: white;
+    border-top: 1px solid #1a8188c0;
+}
+
+.secao-menu ul {
+    background-color: white;
+}
+
+.secao-menu li {
+    border-bottom: 1px solid gray;
+    margin: .2em;
+}
+
+.secao-menu a {
+    color: #1a8188c0;
+}
+
+@media(min-width: 760px){
+    .secao-menu > section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: .9em;
+    }
+    .secao-menu section div {
+        width: 48%;
+    }
+}

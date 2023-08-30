@@ -1,0 +1,116 @@
+header {
+    position: relative;
+    height: 150px;
+    background-color: #1a8188c0;
+    color: white;
+    padding: 1em;
+}
+.logo {
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+header span:hover {
+    cursor: pointer;
+}
+
+/* header span:hover ~ nav {
+    display: block;
+    transition: 10s;
+} */
+.cblh-menus {
+    position: relative;
+    /* width: 80%;
+    margin: auto; */
+}
+.sub-menu-bolo {
+    position: relative;
+}
+.sub-menu-bolo-triangulo {
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    top: .9em;
+    left: 5em;
+    color: white;
+    border-top: 5px solid ;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+}
+.sub-menu-bolo ul {
+    display: none;
+    position: absolute;
+    color: white;
+    background-color: #1a8188c0;
+    /* border: 1px solid white; */
+    border-radius: 6px 7px;
+    
+}
+.sub-menu-bolo:hover ul {
+    display: block;
+    transition: 2s;
+}
+.cblh-menus > li {
+    width: 100%;
+    margin: 5px;
+    padding: .50em;
+    /* border-bottom: 1px solid gray; */
+}
+.cblh-menus li a {
+    color: white;
+    padding: 1em;
+}
+
+.cblh-menus > li:hover {
+    transform: translate(.5em);
+    background-color: #1a818886;
+}
+
+.cblh-menus li ul li:hover {
+    border: 1px solid blueviolet;;
+}
+.cblh-menus a:active {
+    color: white;
+    font-weight: 600;
+}
+
+@media(min-width: 780px){
+    header {
+        height: 100px;
+    }
+    .cabecalho {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        padding-top: 2em;
+        margin: auto;
+    }
+    .cabecalho > span {
+        display: none;
+    }
+    .cblh-menus  {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 100%;
+    } 
+    .cblh-menus > li{
+        width: 20%;
+    }
+    .cblh-menus > li:last-child{
+        width: 60%;
+        background-color: rgba(255, 0, 0, 0.425);
+        
+    }
+    .cblh-menus > li:last-child:hover{
+        color: #ff00006c;
+        border: 1px solid #ff00006c;
+        background-color: #1a8188c0;
+        
+    }
+    .sub-menu-bolo ul {
+        width: 250px;
+    } 
+}
